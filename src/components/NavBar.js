@@ -20,15 +20,15 @@ const NavBar =(props)=>{
                         <Navbar.Collapse className="justify-content-end">
                         <Nav className="justify-content-end" href="/home">
                             <Nav.Item>
-                                <Nav.Link href ="/">Home</Nav.Link>
+                                <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
                             </Nav.Item>
                             {userLoggedIn ? (
                                 <>
                                 <Nav.Item>
-                                    <Nav.Link href="/Account">Account</Nav.Link>
+                                    <Nav.Link as={Link} to={"/Account"}>Account</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href='/Notes'>Notes</Nav.Link>
+                                    <Nav.Link as={Link} to={'/Notes'}>Notes</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link href='' onClick={()=>{
@@ -42,10 +42,10 @@ const NavBar =(props)=>{
                             ):(
                                 <>
                                 <Nav.Item>
-                                    <Nav.Link href="/Register">Register</Nav.Link>
+                                    <Nav.Link as={Link} to={"/Register"}>Register</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href='/Login'>Login</Nav.Link>
+                                    <Nav.Link as={Link} to={'/Login'}>Login</Nav.Link>
                                 </Nav.Item>
                                 </>
                             )}

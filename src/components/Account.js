@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from '../config/axios'
 import React,{useState, useEffect} from "react";
 import { Container, Card } from "react-bootstrap";
 
@@ -6,7 +6,7 @@ const Account = (props)=>{
     const [user, setUser] = useState({})
 
     useEffect(()=>{
-        axios.get('http://dct-user-auth.herokuapp.com/users/account', {
+        axios.get('/users/account', {
             headers:{
                 'x-auth': localStorage.getItem('token')
             }

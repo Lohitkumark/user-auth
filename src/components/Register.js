@@ -40,12 +40,12 @@ const Register=(props)=>{
     return (
         <div className='mt-4'>
             <Container className='col-md-4'>
-                <Card  style={{ width: '25rem' }} className='bg-dark text-light mb-3'>
+                <Card  className='bg-dark text-light mb-3'>
                     <Card.Body>
                         <h2>Register With Us</h2>
                     </Card.Body>
                 </Card>
-                <Card  style={{ width: '25rem'}} className='bg-dark text-light mb-3'>
+                <Card   className='bg-dark text-light mb-3'>
                 <Card.Body>
                     <Form onSubmit={handleSubmit}>
                         <Form.Control type='text' placeholder='Enter username' value={userName} onChange={handleChange} name='userName'/><br/>

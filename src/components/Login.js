@@ -34,12 +34,12 @@ const Login=(props)=>{
 
     return (
         <Container className='col-md-4 mt-4'>
-            <Card style={{ width: '25rem'}} className='bg-dark text-light mb-3'>
+            <Card  className='bg-dark text-light mb-3'>
                 <Card.Body>
                     <h2>Login</h2>
                 </Card.Body>
             </Card>
-            <Card style={{ width: '25rem'}} className='bg-dark text-light mb-3'>
+            <Card  className='bg-dark text-light mb-3'>
                 <Card.Body>
                     <Form onSubmit={handleSubmit}>
                         <Form.Control type='email' placeholder='Enter email' value={email} onChange={handleChange} name='email'/><br/>

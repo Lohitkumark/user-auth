@@ -21,8 +21,8 @@ const NotesList =(props)=>{
                         <div >
                             {notes.map((note) =>{
                                 return (
-                                    <div className="container card text-warning  bg-dark mb-2">
-                                        <NoteItem key={note._id} {...note} removeItem={removeItem} editItem={editItem}/>
+                                    <div className="container card text-warning  bg-dark mb-2" key={note._id}>
+                                        <NoteItem  {...note} removeItem={removeItem} editItem={editItem}/>
                                     </div>
                                 )
                             })}
